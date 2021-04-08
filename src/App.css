@@ -1,0 +1,101 @@
+@import "~antd/dist/antd.css";
+
+.clear-fix:after,
+.clear-fix:before {
+  display: table;
+  content: none;
+}
+
+.clear-fix:after {
+  clear: both;
+}
+
+#header {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+#header > .ant-row > .ant-col h1 {
+  margin-bottom: 0;
+}
+
+#logo {
+  height: 64px;
+  padding-left: 40px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  line-height: 64px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+#logo > img {
+  position: relative;
+  top: -1.5px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.menu-row {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-row > :last-child {
+  margin-right: 40px;
+}
+
+.menu-row > * {
+  -webkit-box-flex: 0;
+  flex: none;
+  margin: 0 12px 0 0;
+}
+
+#search-box.narrow-mode {
+  -webkit-box-flex: 0 !important;
+  flex: none !important;
+  width: 30px;
+}
+
+#search-box {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 22px;
+  line-height: 22px;
+  white-space: nowrap;
+  border-left: 1px solid #f0f0f0;
+  padding-left: 16px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
