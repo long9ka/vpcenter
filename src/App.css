@@ -1,4 +1,7 @@
-@import "~antd/dist/antd.css";
+#backtop {
+  right: 40px;
+  bottom: 40px;
+}
 
 .clear-fix:after,
 .clear-fix:before {
@@ -20,6 +23,12 @@
 
 #header > .ant-row > .ant-col h1 {
   margin-bottom: 0;
+}
+
+.header-row {
+  flex-flow: nowrap;
+  height: 64px;
+  row-gap: 0;
 }
 
 #logo {

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "antd/dist/antd.css"; // antd style
 import "./App.css";
 import {
   BackTop,
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <BackTop />
+      <BackTop style={{ right: 50 }} />
       <Layout>
         <Header id="header" class="clear-fix">
           <Row style={{ flexFlow: "nowrap", height: 64, rowGap: 0 }}>
